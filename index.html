@@ -1,0 +1,473 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+    <title>Chhatisgarh Health Department</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+        content="Land Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Bootstrap-Core-CSS -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Style-CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //Custom-Files -->
+
+    <!-- Web-Fonts -->
+    <link
+        href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <!-- //Web-Fonts -->
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header d-lg-flex justify-content-between align-items-center py-2 px-sm-2 px-1">
+                <!-- logo -->
+                <div id="logo">
+                    <h4><a href="index.html"><span class="text-bl">Chhatisgarh Health Department</span></a></h4>
+                </div>
+                <!-- //logo -->
+                <!-- nav -->
+                <div class="nav_w3ls ml-lg-5">
+                    <nav>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <!-- //nav -->
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- banner -->
+    <div class="main-w3pvt mian-content-wthree text-center" id="home">
+        <div class="container">
+            <div class="style-banner mx-auto">
+                <h3 class="text-wh font-weight-bold">Health Infrastructure Mapping </h3>
+                
+                <!-- form -->
+                <div class="home-form-w3ls mt-5 pt-lg-4">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select required="" class="form-control", id="Infra_type">
+                                        <option value="">Infrastructure Type</option>
+                                        <option value="CHC">Community Health Centre</option>
+                                        <option value="PHC">Primary Health Centre</option>
+                                        <option value="SHC">Sub Health Center</option>
+                                        <option value="All">All Health Centers</option>
+                                    
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select required="" class="form-control", id="states">
+                                        <option value="">Select District</option>
+                                        <option value="BALOD">BALOD</option>
+                                        <option value="BALODA BAJAR">BALODA BAJAR</option>
+                                        <option value="BALRAMPUR">BALRAMPUR</option>
+                                        <option value="BASTAR">BASTAR</option>
+                                        <option value="BEMETARA">BEMETARA</option>
+                                        <option value="BIJAPUR">BIJAPUR</option>
+                                        <option value="BILASPUR">BILASPUR</option>
+                                        <option value="DANTEWADA">DANTEWADA</option>
+                                        <option value="DHAMTARI">DHAMTARI</option>
+                                        <option value="DURG">DURG</option>
+                                        <option value="GARIYABANDH">GARIYABANDH</option>
+                                        <option value="JANJGIR-CHAMPA">JANJGIR-CHAMPA</option>
+                                        <option value="JASHPUR">JASHPUR</option>
+                                        <option value="KANKER">KANKER</option>
+                                        <option value="KAWARDHA">KAWARDHA</option>
+                                        <option value="KONDAGAON">KONDAGAON</option>
+                                        <option value="KORBA">KORBA</option>
+                                        <option value="KORIA">KORIA</option>
+                                        <option value="MAHASAMUND">MAHASAMUND</option>
+                                        <option value="MUNGELI">MUNGELI</option>
+                                        <option value="NARAYANPUR">NARAYANPUR</option>
+                                        <option value="RAIGARH">RAIGARH</option>
+                                        <option value="RAIPUR">RAIPUR</option>
+                                        <option value="RAJNANDGAON">RAJNANDGAON</option>
+                                        <option value="SUKMA">SUKMA</option>
+                                        <option value="SURAJPUR">SURAJPUR</option>
+                                        <option value="SURGUJA">SURGUJA</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    <button type="submit" class="btn btn_apt" onclick="getSelectedValue();">Start Mapping</button>
+                    <script>
+                       function getSelectedValue(){
+                        var Infra = document.getElementById("Infra_type").value;
+                        var district =document.getElementById("states").value;
+                       
+    
+                            if((Infra=="CHC")&&(district=="BALOD")){
+                                window.open("https://drive.google.com/open?id=1cItQbkryaOqMouhaei-DnrLFadxD-Kor&usp=sharing")}
+                            else if((Infra=="PHC")&&(district=="BALOD")){
+                                window.open("https://drive.google.com/open?id=13mT0H6aYvbPNKeGrCg83TR_Szaiqc6vm&usp=sharing")
+                            }
+                             else if((Infra=="SHC")&&(district=="BALOD")){
+                                window.open("https://drive.google.com/open?id=1bweeybV8ELbUyygdo0UEEbvF1ccH79h-&usp=sharing")
+                            }
+                             else if((Infra=="CHC")&&(district=="BALODA BAJAR")){
+                                window.open("https://drive.google.com/open?id=1ObRERJ5v9H-88G8fnu0s4Mm8n58g0hCh&usp=sharing")
+                            }
+                             else if((Infra=="PHC")&&(district=="BALODA BAJAR")){
+                                window.open("https://drive.google.com/open?id=1U1alkyVocWywSTRmku49p7Pw7DguaCTd&usp=sharing")
+                            }
+                             else if((Infra=="SHC")&&(district=="BALODA BAJAR")){
+                                window.open("https://drive.google.com/open?id=1C7VqUx2BW_dOI8hn2JbTDlEGwsihOiSy&usp=sharing")
+                            }
+                            else if((Infra=="CHC")&&(district=="BALRAMPUR")){
+                                window.open("https://drive.google.com/open?id=1Wov7HNeudST6Y2mlbJWhUK3nzRzNREHJ&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="BALRAMPUR")){
+                                window.open("https://drive.google.com/open?id=1t9Ck5pL2l4PPdHdCCj1AMUFvxeHmLIRU&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="BALRAMPUR")){
+                                window.open("https://drive.google.com/open?id=1f9kFDoPwW1-RbSLOnRGWKMxu4gui7-tO&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="BASTAR")){
+                                window.open("https://drive.google.com/open?id=1rdUskqnWKQpmZCDzaL3AuDYBqSwmSjXt&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="BASTAR")){
+                                window.open("https://drive.google.com/open?id=17ELgkM5exI0HexWoJOiIFemE3Oe_0_-B&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="BASTAR")){
+                                window.open("https://drive.google.com/open?id=1l2HBenFbfPoHhaBVVIKVTjIVQOmon68J&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="BEMETARA")){
+                                window.open("https://drive.google.com/open?id=1FPXO4-jfMEuFlPpvjpDvlZ8w9nC53dGz&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="BEMETARA")){
+                                window.open("https://drive.google.com/open?id=1RVTr_dv4uQEg8kj1hG5JvRVpuEdkGje7&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="BEMETARA")){
+                                window.open("https://drive.google.com/open?id=1_xGy0d8YDJ9P6DzdxTtCBA0IeuiconkN&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="BIJAPUR")){
+                                window.open("https://drive.google.com/open?id=1sYm4owvmgvYsskhdjcXX6ZcenLGYNwUJ&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="BIJAPUR")){
+                                window.open("https://drive.google.com/open?id=1lggIo0RaWbIsUdAKTwv-hoktCQWNwbUd&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="BIJAPUR")){
+                                window.open("https://drive.google.com/open?id=1ki8PuA3PgMT9Dk8X4X9aWDEA2dx0Mcb7&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="BILASPUR")){
+                                window.open("https://drive.google.com/open?id=1kPP4yG_GsTA6s31k73qlI4y61df_Qzyk&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="BILASPUR")){
+                                window.open("https://drive.google.com/open?id=14S11vdOXNe-_JVGtjJnRrNPX4YVJ16_a&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="BILASPUR")){
+                                window.open("https://drive.google.com/open?id=1QdmWBQmXAGuld-HFArcrWvtqOvgIvJ_-&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="DANTEWADA")){
+                                window.open("https://drive.google.com/open?id=1TGagdiZeNSwDnXn7DJfATur88YfLhKrx&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="DANTEWADA")){
+                                window.open("https://drive.google.com/open?id=1DTAkNFMWZqG9-bdY-IySzf4up8YpgXis&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="DANTEWADA")){
+                                window.open("https://drive.google.com/open?id=1WfuA0MWYSEmzeSMg1zXqSEyQrgjqwfD_&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="DHAMTARI")){
+                                window.open("https://drive.google.comopenid=1dcJ10KGcj_b22X5PBrDXjM9D0KRy2ATH&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="DHAMTARI")){
+                                window.open("https://drive.google.com/open?id=16qsPUDvZ4S0AhrgbFapqF9j9UGeaNAzg&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="DHAMTARI")){
+                               alert("No Data Available");
+                            }else if((Infra=="CHC")&&(district=="DURG")){
+                                window.open("https://drive.google.com/open?id=1OAAJpdvDgcCGRS_xxFIvvIueS8RuDpXk&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="DURG")){
+                                window.open("https://drive.google.com/open?id=1eYRLs-oLlwoINYCQ369SztR9KH2DozBk&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="DURG")){
+                                window.open("https://drive.google.com/open?id=1r-ltNyZuZiF-wESPHEbO2Vktaz7RRn92&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="GARIYABANDH")){
+                                window.open("https://drive.google.com/open?id=1032q5ZQL_E96NCk4mxsq4nOpaaWhbT8B&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="GARIYABANDH")){
+                                window.open("https://drive.google.com/open?id=1c1VTDZH99rioB3eHkD4N0nX2Cz0Ta-rT&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="GARIYABANDH")){
+                                window.open("https://drive.google.com/open?id=1Mi7OiG8kO_eAoMYFVMNq-BfhbEJdIzJX&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="JANJGIR-CHAMPA")){
+                                window.open("https://drive.google.com/open?id=1xyZ8o_PV4pWXYwdsNxSp6weDxQ1dy2jY&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="JANJGIR-CHAMPA")){
+                                window.open("https://drive.google.com/open?id=19_0Yq0gTzP4y9YzNzewcOnDmt5SRu87V&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="JANJGIR-CHAMPA")){
+                                window.open("https://drive.google.com/open?id=1Ife-wr0GjLGWcEM34kIOB24kB2M5QKQA&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="JASHPUR")){
+                                window.open("https://drive.google.com/open?id=10hbDwzaM7h3qGAJpuPzxFX17XaLWq7lY&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="JASHPUR")){
+                                window.open("https://drive.google.com/open?id=1Fw6Qao8RtD8K36FgM9kRPKpOUvqS_7ZL&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="JASHPUR")){
+                                window.open("https://drive.google.com/open?id=1ZXTYfkVfzMhGhkL1Vdr0lvhxEODsMjfN&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="KANKER")){
+                                window.open("https://drive.google.com/open?id=1P1bejjrCVdUqOQ5Ct16pSQRu5BKhMgYo&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="KANKER")){
+                                window.open("https://drive.google.com/open?id=1RaEdE2unknMS9nxAw4FgK7TUoLKSLW9g&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="KANKER")){
+                                window.open("https://drive.google.com/open?id=1r1SX_XTsAIWzvHswlidT5pWfQ9B8NqC9&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="KAWARDHA")){
+                                window.open("https://drive.google.com/open?id=1pQD_eVU218JY9hiB6rn3P9J_xXnO_GFt&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="KAWARDHA")){
+                                window.open("https://drive.google.com/open?id=1XQ5DhD_VclM_AkNiU1D-1UdOjIDmELSi&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="KAWARDHA")){
+                                window.open("https://drive.google.com/open?id=15I1BDLrkzPS9jWILWJhSSc3JrEfaLpYc&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="KONDAGAON")){
+                                window.open("https://drive.google.com/open?id=1IYJSNLTFjKJQszqYvF9W8H_fEOTxiFf5&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="KONDAGAON")){
+                                window.open("https://drive.google.com/open?id=1iy1p5NxqlPL7tQdzJ8VhHD1pgElnZC5s&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="KONDAGAON")){
+                                window.open("https://drive.google.com/open?id=17JB5hVcbTHJmjpwSR3yusQYIs5cWIN_x&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="KORBA")){
+                                window.open("https://drive.google.com/open?id=17JB5hVcbTHJmjpwSR3yusQYIs5cWIN_x&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="KORBA")){
+                                window.open("https://drive.google.com/open?id=1_0FtCp1gn9G4XUCbQ4EbZNgbbuoH8MmR&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="KORBA")){
+                                window.open("https://drive.google.com/open?id=1FsNuyLWV0Qko1VnKBlqC0wUO1siC028t&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="KORIA")){
+                                window.open("https://drive.google.com/open?id=11atTLDLPaOf_jGScDAXMtn3tOjTJ2Y-4&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="KORIA")){
+                                window.open("https://drive.google.com/open?id=11atTLDLPaOf_jGScDAXMtn3tOjTJ2Y-4&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="KORIA")){
+                                alert("No Data Available")
+                            }else if((Infra=="CHC")&&(district=="MAHASAMUND")){
+                                window.open("https://drive.google.com/open?id=1lFgAr4vO5A7BR3BFPMHqaYBM-Fq7SSoM&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="MAHASAMUND")){
+                                window.open("https://drive.google.com/open?id=11fGNKLJSsdoVdz11mvcsFH8f7qpdGYfp&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="MAHASAMUND")){
+                                window.open("https://drive.google.com/open?id=1_lOye32SjcE4kbP83rr3UiyuTP3F2trf&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="MUNGELI")){
+                                window.open("https://drive.google.com/open?id=1DYDW5rS3i0abxBPt9fW3uPobDBM4ndU1&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="MUNGELI")){
+                                window.open("https://drive.google.com/open?id=1_723JPSIMDBe0vDSVUjY5vd8dPArk_8v&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="MUNGELI")){
+                                window.open("https://drive.google.com/open?id=1N9wvBSYOwXUBbDdc1UJdXnSWKmGxQv1y&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="NARAYANPUR")){
+                                window.open("https://drive.google.com/open?id=1BVLQgV7CEgHzdmZ6-eh0PRyWYzuv0ywW&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="NARAYANPUR")){
+                                window.open("https://drive.google.com/open?id=1Y4jr_6_wjWV8TcR44UxikzN9mhsDagnu&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="NARAYANPUR")){
+                                window.open("https://drive.google.com/open?id=1QCIQQjI8F1NpXLl9860iMfq0sTQyPilj&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="RAIGARH")){
+                                window.open("https://drive.google.com/open?id=15I1Kp6O6wWDVxh8t_NCG406_zXepXJ_m&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="RAIGARH")){
+                                window.open("https://drive.google.com/open?id=1LD5dIjUfpfZX0p8ZwIqHGUBrrpBIjHoy&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="RAIGARH")){
+                                window.open("https://drive.google.com/open?id=1c-Br_QUIX2MxbPXXAEDkEcGOpnWS4YqU&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="RAIPUR")){
+                                window.open("https://drive.google.com/open?id=1TCo2leTEUgLvdDqmIzKjNBq1VMUOs6vH&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="RAIPUR")){
+                                window.open("https://drive.google.com/open?id=1akR1qm3Euq2FxosTokHRC_eCcXFBqzeL&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="RAIPUR")){
+                                window.open("https://drive.google.com/open?id=1tQftqJjnWSqnhRlJSGymrw0SP9uKgFlL&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="RAJNANDGAON")){
+                                window.open("https://drive.google.com/open?id=15b9nC6qMgDUClvokPJ3g2zm6Acwoe-39&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="RAJNANDGAON")){
+                                window.open("https://drive.google.com/open?id=1eJoovqCekFK6-ZKLM5pYhdJPBYouezH9&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="RAJNANDGAON")){
+                                window.open("https://drive.google.com/open?id=1l8MK57Hq-CGDwZwMnxcIppAgGQ29Wmab&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="SUKMA")){
+                                window.open("https://drive.google.com/open?id=16XwpGS-hlub91IzMs_FkiJh59sML91sE&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="SUKMA")){
+                                window.open("https://drive.google.com/open?id=1q3ZqNcFuJvYGz8d8lvlLUZBF1-0pkMHH&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="SUKMA")){
+                                window.open("https://drive.google.com/open?id=1iepJ76H2bSIMlEKzCilbKGkEYSXJpTMv&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="SURAJPUR")){
+                                window.open("https://drive.google.com/open?id=1Ms87DSoW6JGdmKFgw8IuRZ_aWFLho41x&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="SURAJPUR")){
+                                window.open("https://drive.google.com/open?id=1NeqvtGI5vFKm3v86w4UMGEJ2UC21uDm6&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="SURAJPUR")){
+                                window.open("https://drive.google.com/open?id=10JsJwj7r7TC04_pyNIR5OlaJCS9oB94O&usp=sharing")
+                            }else if((Infra=="CHC")&&(district=="SURGUJA")){
+                                window.open("https://drive.google.com/open?id=1mtmdAJu_OZGXcp6Jef-wX4iLR3eUvecX&usp=sharing")
+                            }else if((Infra=="PHC")&&(district=="SURGUJA")){
+                                window.open("https://drive.google.com/open?id=1eRgFedQ-Q7eb4zZEkTwluJFsLX8oO1j9&usp=sharing")
+                            }else if((Infra=="SHC")&&(district=="SURGUJA")){
+                                window.open("https://drive.google.com/open?id=1wLVbSAxMpjjD1il5JaJtuVuixKg6eZ13&usp=sharing")
+                            }else if((Infra=="All")&&(district=="BALOD")){
+                                window.open("https://drive.google.com/open?id=17PZhNYis2PNX8fiuYNjvZFq4ZZiG_EJZ&usp=sharing")
+                            }else if((Infra=="All")&&(district=="BALODA BAJAR")){
+                                window.open("https://drive.google.com/open?id=1wxokLpAF4L36j10vt6l4-SSiXKex0Nb1&usp=sharing")
+                            }else if((Infra=="All")&&(district=="BALRAMPUR")){
+                                window.open("https://drive.google.com/open?id=1_pueXOkSQhV7-JHz2sPoSBgtsUYctbbG&usp=sharing")
+                            }else if((Infra=="All")&&(district=="BASTAR")){
+                                window.open("https://drive.google.com/open?id=1-D6fj_z00_iIu5_SdtOsdOOcrEnvnZwD&usp=sharing")
+                            }else if((Infra=="All")&&(district=="BEMETARA")){
+                                window.open("https://drive.google.com/open?id=1mxrgQIviAiGXrk92zDfk4x4sAasy9o9B&usp=sharing")
+                            }else if((Infra=="All")&&(district=="BIJAPUR")){
+                                window.open("https://drive.google.com/open?id=1McxVkGyaGZoEck6bcaJAz6sEYXD0ldt4&usp=sharing")
+                            }else if((Infra=="All")&&(district=="BILASPUR")){
+                                window.open("https://drive.google.com/open?id=1dVQNW-TY1Cqlvcnkmg7Ko34otJNCwmo_&usp=sharing")
+                            }else if((Infra=="All")&&(district=="DANTEWADA")){
+                                window.open("https://drive.google.com/open?id=1km5UczC75IXiTYbLsuRnCPjX6lAB_aQL&usp=sharing")
+                            }else if((Infra=="All")&&(district=="DHAMTARI")){
+                                window.open("https://drive.google.com/open?id=1Cy-0t8uzwKFMVODOWZCHdXC0YRUsezmM&usp=sharing")
+                            }else if((Infra=="All")&&(district=="DURG")){
+                                window.open("https://drive.google.com/open?id=1P1ZY26YGQ3O8inK779roPN9r-I8lLfNi&usp=sharing")
+                            }else if((Infra=="All")&&(district=="GARIYABANDH")){
+                                window.open("https://drive.google.com/open?id=13HVJ-RnlYTeLt9_17NMYgGo-zgrvtmyZ&usp=sharing")
+                            }else if((Infra=="All")&&(district=="JANJGIR-CHAMPA")){
+                                window.open("https://drive.google.com/open?id=14YijGxNGCMFVVsOdoERAwMl4kLU1I7Zt&usp=sharing")
+                            }else if((Infra=="All")&&(district=="JASHPUR")){
+                                window.open("https://drive.google.com/open?id=1h8dKMMiH03VKCYiy7XAQHElqim2gedkb&usp=sharing")
+                            }else if((Infra=="All")&&(district=="KANKER")){
+                                window.open("https://drive.google.com/open?id=1YFCydaCoA1malUwGuryQQN-De-YZE4hd&usp=sharing")
+                            }else if((Infra=="All")&&(district=="KAWARDHA")){
+                                window.open("https://drive.google.com/open?id=1r9xXoh7OyhVoVK6tbMoz0NRjK9qEXwNf&usp=sharing")
+                            }else if((Infra=="All")&&(district=="KONDAGAON")){
+                                window.open("https://drive.google.com/open?id=1g3xPZghumumoxlcJd3FmAOw2Ahiqt_vT&usp=sharing")
+                            }else if((Infra=="All")&&(district=="KORBA")){
+                                window.open("https://drive.google.com/open?id=1P1E0EOwX6rvOgYMUCXJuNUay_1mnso1o&usp=sharing")
+                            }else if((Infra=="All")&&(district=="KORIA")){
+                                window.open("https://drive.google.com/open?id=1YE0KQrMXuCntCAhWXEDEKf_bgH2UheGC&usp=sharing")
+                            }else if((Infra=="All")&&(district=="MAHASAMUND")){
+                                window.open("https://drive.google.com/open?id=12iOlHbTYuUThFe4BdP74MEGaOagZE1kK&usp=sharing")
+                            }else if((Infra=="All")&&(district=="MUNGELI")){
+                                window.open("https://drive.google.com/open?id=13iXu7ZSCRoF6GchmFYkVrCQj2rF8Xyew&usp=sharing")
+                            }else if((Infra=="All")&&(district=="NARAYANPUR")){
+                                window.open("https://drive.google.com/open?id=1Uy72MthZ6vKAamQASvmiCo24Whl9aUrJ&usp=sharing")
+                            }else if((Infra=="All")&&(district=="RAIGARH")){
+                                window.open("https://drive.google.com/open?id=10NP-4bWjCrgJp4iPHdbcObkiyg2dGwk0&usp=sharing")
+                            }else if((Infra=="All")&&(district=="RAIPUR")){
+                                window.open("https://drive.google.com/open?id=1Rq1tzI2-ijBnEaa_QwSmJ47qUf7BuNFk&usp=sharing")
+                            }else if((Infra=="All")&&(district=="RAJNANDGAON")){
+                                window.open("https://drive.google.com/open?id=1iao-nXh703xeICeLmqOEksPlM7m_emmK&usp=sharing")
+                            }else if((Infra=="All")&&(district=="SUKMA")){
+                                window.open("https://drive.google.com/open?id=1i40UUjlG0Ii36G3DWXy_mjO9hqYkiIVe&usp=sharing")
+                            }else if((Infra=="All")&&(district=="SURAJPUR")){
+                                window.open("https://drive.google.com/open?id=13z13w4gP_GtZxOiQsAuHu2LFTYtT2jSV&usp=sharing")
+                            }else if((Infra=="All")&&(district=="SURGUJA")){
+                                window.open("https://drive.google.com/open?id=1A5zoblQOhwyI6O8-MOgcsrwYJVqbek4f&usp=sharing")
+                            }else{
+                                alert("INVALID SELECTION")
+                            }
+                     }
+
+                        
+                    </script>
+                    </form>
+                </div>
+                <!-- //form -->
+            </div>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- contact-->
+    <section class="contact py-5" id="contact">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-2 text-center text-wh font-weight-bold">Contact <span>Us</span></h3>
+            <p class="text-center text-li title-w3 mb-md-5 mb-4">Data Analytics Department</p>
+            <div class="contact_grid_right pt-4">
+                <form action="#" method="post">
+                    <div class="row contact_left_grid">
+                        <div class="col-lg-6 con-left">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="Name" placeholder="Name" required="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" name="Email" placeholder="Email" required="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="Subject" placeholder="Subject"
+                                    required="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 con-right">
+                            <div class="form-group">
+                                <textarea id="textarea" placeholder="Message" required=""></textarea>
+                            </div>
+                            <button class="form-control btn" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- //Contact -->
+
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container py-xl-4 py-lg-3">
+            <div class="row footer-grids">
+                <div class="col-lg-2 col-6 footer-grid">
+                    <h3 class="mb-sm-4 mb-3 pb-lg-3">Home</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html">Index</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                       
+                        <li>
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="col-lg-2 col-6 footer-grid footer-contact mt-lg-0 mt-4">
+                    <h3 class="mb-sm-4 mb-3 pb-lg-3"> Contact Us</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            +91-8527818860
+                        </li>
+                        <li>
+                            <a href="mailto:akashpatel199620@gmail.com">akashpatel199620@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 footer-grid mt-lg-0 mt-4">
+                    <div class="footer-logo">
+                        <h4 class="text-lg-center text-center">
+                            <a class="logo text-wh font-weight-bold" href="index.html"><span font-size="20 px" class="text-bl">Chhatisgarh Health Ministry</span></a>
+
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="copyright-w3ls py-4">
+        <div class="container">
+            <div class="row">
+                <!-- copyright -->
+                <p class="col-lg-8 copy-right-grids text-wh text-lg-left text-center mt-lg-2">© 2019 Data Analytics Department. All
+                    Rights Reserved | Design by
+                    <a href="#" target="_blank">Akash Patel</a>
+                </p>
+                <!-- //copyright -->
+    
+               
+    <!-- move top icon -->
+    <a href="#home" class="move-top text-center">
+        <span class="fa fa-angle-double-up" aria-hidden="true"></span>
+    </a>
+    <!-- //move top icon -->
+
+</body>
+
+</html>
